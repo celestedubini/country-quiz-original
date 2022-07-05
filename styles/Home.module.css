@@ -23,7 +23,7 @@
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  margin: 5px;
+  margin-block: 5px;
   width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
