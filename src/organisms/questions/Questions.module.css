@@ -132,7 +132,7 @@
 .imageWorld:before{
     position: absolute;
     content: url("/static/images/world.svg");
-    top: -94px;
+    top: -100px;
     left: 68px;
 }
 
