@@ -40,7 +40,6 @@ function CapitalQuestion({changeQuestion, gameOver, addingRightAnswers, countrie
         if (countries[0] !== undefined) {
             const auxArray: Array<CountryType> = [];
             if (countriesCapitalOptions.length !== 4) {
-                console.log('entre aca capital')
                 for (let i = 0; i < 4; i++) {
                     auxArray.push(countries[randomCountryIndex()] as CountryType)
                 }

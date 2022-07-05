@@ -41,7 +41,6 @@ function FlagQuestion({countries, changeQuestion, gameOver, addingRightAnswers}:
     const settingCountriesOptionsFlag = () => {
         const auxArrayFlag: Array<CountryType> = [];
         if (countriesFlagOptions.length !== 4) {
-            console.log('entre aca bandera')
             for (let i = 0; i < 4; i++) {
                 auxArrayFlag.push(countries[randomCountryIndex()] as CountryType)
             }
