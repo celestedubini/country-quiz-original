@@ -47,6 +47,7 @@ function Questions({didYouLose, addingRightAnswers}: QuestionsProps) {
     return (
         <div className={styles.questionsComponent}>
             {countries.length === 0 && !error && <div className={styles.loader}></div>}
+            {countries.length > 0 && <div className={styles.imageWorld}></div>}
             {capitalQuestion && countries.length > 0 &&
                 <CapitalQuestion changeQuestion={changeQuestion} gameOver={didYouLose}
                                  addingRightAnswers={addingRightAnswers} countries={countries}/>}

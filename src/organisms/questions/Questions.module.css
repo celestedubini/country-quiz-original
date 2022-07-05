@@ -39,7 +39,7 @@
     line-height: 27px;
     letter-spacing: 0;
     text-align: left;
-    padding-block: 15px;
+    padding-block: 10px;
     margin-block: 15px;
     width: 400px;
     display: flex;
@@ -126,6 +126,16 @@
     100% { transform: rotate(360deg); }
 }
 
+.imageWorld{
+    position: relative;
+}
+.imageWorld:before{
+    position: absolute;
+    content: url("/static/images/world.svg");
+    top: -94px;
+    left: 68px;
+}
+
 @media (max-width: 768px) {
     .possibleAnswer{
         width: 300px;
@@ -149,5 +159,8 @@
     }
     .containerHeading{
         padding-left: 0;
+    }
+    .imageWorld{
+        display: none;
     }
 }
