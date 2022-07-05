@@ -18,7 +18,7 @@ function Answers({options, alreadyAnswered, rightCountry, settingAnswer, setCorr
     const ultimateHandle = (event: React.MouseEvent) => {
         if (!alreadyAnswered) {
             setClicked(parseInt(event.currentTarget.getAttribute("value")!));
-            if (rightCountry === parseInt(event.currentTarget.getAttribute("value")!)) {
+            if (rightCountry === clicked) {
                 setCorrectOrIncorrect ? setCorrectOrIncorrect() : null;
             } else {
                 event.currentTarget.classList.add(styles.incorrect)
