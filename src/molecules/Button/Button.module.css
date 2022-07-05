@@ -1,3 +1,16 @@
 .optionLetter{
-    padding-left: 45px;
+    padding-right: 45px;
+    padding-left: 19px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.containerLabelIcon{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
