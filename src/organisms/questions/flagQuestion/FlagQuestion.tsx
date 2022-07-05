@@ -66,13 +66,18 @@ function FlagQuestion({countries, changeQuestion, gameOver, addingRightAnswers}:
         []
     )
 
+    const blurData: string =
+        `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMSLtwBgAFKAJk9LVT+AAAAABJRU5ErkJggg==`
+
     return (<>
             {countriesFlagOptions.length > 0 && rightCountry !== undefined && countriesFlagOptions[0].name !== undefined && <>
                 <div className={styles.imageFlagWrapper}>
                     <Image
                         src={countriesFlagOptions[rightCountry].flag}
                         width={84} height={54}
-                        alt="Country Flag"/>
+                        alt="Country Flag"
+                        placeholder="blur"
+                        blurDataURL={blurData}/>
                 </div>
                 <div className={styles.containerHeading}>
                     <HeadingH2 copy='Which country does this flag belong to?' className="question"/>
