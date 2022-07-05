@@ -3,7 +3,7 @@
 
 html,
 body {
-  background: #5256a1 url("../assets/background.png") no-repeat fixed center center;
+  background: #5256a1 url("../public/background.png") no-repeat fixed center center;
   padding: 0;
   margin: 0;
   font-family: 'Poppins', 'Montserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
