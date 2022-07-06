@@ -23,7 +23,7 @@ const Home: NextPage = () => {
             </main>
 
             <footer className={styles.footer}>
-                created by <a href="https://github.com/celestedubini">celestedubini</a>- <a href="https://devChallenges.io">devChallenges.io</a>
+                created by <a href="https://github.com/celestedubini" target="_blank" rel="noreferrer">celestedubini</a>- <a href="https://devChallenges.io" target="_blank" rel="noreferrer">devChallenges.io</a>
             </footer>
         </div>
     )
