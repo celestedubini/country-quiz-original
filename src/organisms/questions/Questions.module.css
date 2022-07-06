@@ -27,6 +27,11 @@
     align-items: center;
 }
 
+.nextButton:hover{
+    background-color: #08569C;
+    box-shadow: 0 2px 4px 0 #08639C;
+}
+
 .possibleAnswer {
     color: #6066D0CC;
     background: none;
@@ -76,6 +81,12 @@
     color: white;
     border: 2px solid #EA8282;
     animation: shake 0.5s linear both;
+}
+
+.possibleAnswer:hover.incorrect {
+    background-color: #EA8282;
+    color: white;
+    border: 2px solid #EA8282;
 }
 
 @keyframes shake {
@@ -162,5 +173,9 @@
     }
     .imageWorld{
         display: none;
+    }
+    .nextButton:hover{
+        background-color: #F9A826;
+        box-shadow: 0 2px 4px 0 #FCA82F66;
     }
 }
