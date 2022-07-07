@@ -33,15 +33,17 @@ function FlagQuestion({countries, changeQuestion, gameOver, addingRightAnswers}:
         setGotItRightFlag(true)
     }
 
+    const lengthAvailableOptions: number = 4;
+
     const randomCountryIndex = () => Math.floor(Math.random() * 238);
 
-    const randomRightCountryIndex = () => Math.floor(Math.random() * 4);
+    const randomRightCountryIndex = () => Math.floor(Math.random() * lengthAvailableOptions);
 
 
     const settingCountriesOptionsFlag = () => {
         const auxArrayFlag: Array<CountryType> = [];
-        if (countriesFlagOptions.length !== 4) {
-            for (let i = 0; i < 4; i++) {
+        if (countriesFlagOptions.length !== lengthAvailableOptions) {
+            for (let i = 0; i < lengthAvailableOptions; i++) {
                 auxArrayFlag.push(countries[randomCountryIndex()] as CountryType)
             }
         }

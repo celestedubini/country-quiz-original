@@ -31,16 +31,18 @@ function CapitalQuestion({changeQuestion, gameOver, addingRightAnswers, countrie
         setGotItRightCapital(true)
     }
 
+    const lengthAvailableOptions: number = 4;
+
     const randomCountryIndex = () => Math.floor(Math.random() * 238);
 
-    const randomRightCountryIndex = () => Math.floor(Math.random() * 4);
+    const randomRightCountryIndex = () => Math.floor(Math.random() * lengthAvailableOptions);
 
 
     const settingCountriesOptionsCapital = () => {
         if (countries[0] !== undefined) {
             const auxArray: Array<CountryType> = [];
             if (countriesCapitalOptions.length !== 4) {
-                for (let i = 0; i < 4; i++) {
+                for (let i = 0; i < lengthAvailableOptions; i++) {
                     auxArray.push(countries[randomCountryIndex()] as CountryType)
                 }
             }
